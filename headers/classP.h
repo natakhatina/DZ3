@@ -14,5 +14,18 @@ public:
     double Distance (); // расстояние от нуля до точки
 
 };
+class Class_Date{
+    int day, month, year;
+public:
+    void setYear(int year);
+
+    void setMonth(int month);
+
+    void setDay(int day);
+
+    void CorrectDay();
+
+    void PrintDate();
+};
 
 #endif //DZ3_CLASSP_H
