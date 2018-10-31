@@ -14,6 +14,7 @@ public:
     double Distance (); // расстояние от нуля до точки
 
 };
+///////////////////////////////////////////////////////////
 class Class_Date{
     int day, month, year;
 public:
@@ -26,6 +27,22 @@ public:
     void CorrectDay();
 
     void PrintDate();
+};
+//////////////////////////////////////////////////////////
+class Class_Polar{
+    float phi,r;   // phi в радианах ( -pi; pi )   !!!!!!!!!!!!
+public:
+    float getPhi() const;
+
+    void setPhi(float phi);
+
+    float getR() const;
+
+    void setR(float r);
+
+    void setCord (Class_Point A);
+
+    void PrintPolar();
 };
 
 #endif //DZ3_CLASSP_H

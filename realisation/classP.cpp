@@ -64,3 +64,31 @@ void Class_Date::PrintDate() {
     else
         std::cout<<"Установленная дата: "<<day<<"."<<month<<"."<<year<<std::endl;
 }
+////////////////////////////////////////////////////////////////////////////////////////
+float Class_Polar::getPhi() const {
+    return phi;
+}
+
+void Class_Polar::setPhi(float phi) {
+    Class_Polar::phi = phi;
+}
+
+float Class_Polar::getR() const {
+    return r;
+}
+
+void Class_Polar::setR(float r) {
+    Class_Polar::r = r;
+}
+
+void Class_Polar::setCord(Class_Point A) {
+    int x=A.getX();
+    int y=A.getY();
+    r=sqrt(pow(x,2)+pow(y,2));
+    phi=atan2(y,x);
+    PrintPolar();
+}
+
+void Class_Polar::PrintPolar() {
+    std::cout<<"Установленные полярные координаты: r= "<<r<<", phi= "<<phi<<std::endl;
+}
